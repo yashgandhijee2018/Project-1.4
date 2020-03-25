@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "812077473460",
+    "firebase_url": "https://incampus-1584468494427.firebaseio.com",
+    "project_id": "incampus-1584468494427",
+    "storage_bucket": "incampus-1584468494427.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:812077473460:android:3a6779cf280361500441e1",
+        "android_client_info": {
+          "package_name": "com.demo.incampus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "812077473460-c6rksi3btjbugejsrev84s1mu02hd95t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8GNfdKkTDVa9W2K4QNVGyPncLRL3HGUs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "812077473460-c6rksi3btjbugejsrev84s1mu02hd95t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

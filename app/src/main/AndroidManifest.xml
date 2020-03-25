@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.demo.incampus">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission
+        android:name="android.permission.USE_CREDENTIALS"
+        android:maxSdkVersion="22" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".PhoneNumberActivity"></activity>
+        <activity android:name=".AutthenticateTempActivity" />
+        <activity android:name=".CourseSpinnerActivity" />
+        <activity
+            android:name=".InfoJava"
+            android:screenOrientation="portrait"
+            android:theme="@style/Login" />
+        <activity
+            android:name=".OTPJava"
+            android:screenOrientation="portrait"
+            android:theme="@style/Login" />
+        <activity
+            android:name=".SignUpJava"
+            android:screenOrientation="portrait"
+            android:theme="@style/SignUp"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".SignInJava"
+            android:screenOrientation="portrait"
+            android:theme="@style/Login"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".MainActivityJava"
+            android:screenOrientation="portrait"
+            android:theme="@style/Home">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- MRIGANK -->
+        <activity
+            android:name=".AddPfP"
+            android:screenOrientation="portrait"
+            android:theme="@style/SignUp" />
+        <activity
+            android:name=".Categories"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Walkthrough"
+            android:screenOrientation="portrait"
+            android:theme="@style/Wlkthr" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

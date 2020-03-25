@@ -1,0 +1,192 @@
+<resources>
+    <string name="app_name">InCampus</string>
+    <string name="title_activity_login_sign">login_sign</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="get_started">If you\’re offered a seat on a rocket ship, don\’t ask what seat! Just get on.</string>
+    <string name="find_comm">Incampus gives you the opportunity  to find your community and connect!</string>
+    <string name="conn_frnd">You can connect with your friends From your university, just ping them and say hi!</string>
+    <string name="explore">Not only your university,explore all the university around you and see what\’s popping!</string>
+    <string-array name="institute">
+        <item>---OTHER / NOT LISTED / NO COLLEGE ---</item>
+        <item>ABES Engineering College, New Delhi</item>
+        <item>ABES IT, New Delhi</item>
+        <item>Accurate Institute of Management and Technology, Uttar Pradesh</item>
+        <item>ABV-IIITM, Gwalior</item>
+        <item>ACEIT, Jaipur</item>
+        <item>Ambedkar Institute of Advanced Communication Technologies and Research, New Delhi</item>
+        <item>Amity School Of Engineering Technology (Noida)</item>
+        <item>Amity University (Noida)</item>
+        <item>Ansal University, Gurugram</item>
+        <item>Army Institute Of Technology (Pune)</item>
+        <item>Asia Pacific Institute of Information Technology (APIIT SD) (Panipat)</item>
+        <item>Atma Ram Sanatan Dharma College, Delhi</item>
+        <item>Banasthali Vidyapeeth, Rajasthan</item>
+        <item>Bannari Amman Institute Of Technology (Erode)</item>
+        <item>Bhagwan Parshuram Institute of Technology, Delhi</item>
+        <item>Bharati Vidyapeeth College of Engineering, New Delhi (Delhi)</item>
+        <item>Bharati Vidyapeeth Institute of Computer Applications and Management (BVICAM), New Delhi (Delhi)</item>
+        <item>Bharati Vidyapeeth University College Of Engineering (Pune)</item>
+        <item>Birla Institute of Technology and Science, Pilani (Dubai Campus)</item>
+        <item>Birla Institute of Technology and Science, Pilani (Goa Campus)</item>
+        <item>Birla Institute of Technology and Science, Pilani (Hyderabad Campus)</item>
+        <item>Birla Institute Of Technology (Ranchi)</item>
+        <item>Birla Institute Of Technology Science (Pilani)</item>
+        <item>B.I.T. Sindri (Dhanbad)</item>
+        <item>B. M. Institute Of Engineering Technology, Delhi</item>
+        <item>BMS College Of Engineering (Bangalore)</item>
+        <item>BMS Institute Of Technology Management (Bangalore)</item>
+        <item>BRACT\'S Vishwakarma Institute of Information Technology (Pune)</item>
+        <item>CBS Group of Institution, Delhi</item>
+        <item>C-DAC NOIDA (GGSIPU)</item>
+        <item>Chaitanya Bharathi Institute Of Technology (Hyderabad)</item>
+        <item>Chandigarh University</item>
+        <item>Chitkara University</item>
+        <item>Cluster Innovation Centre</item>
+        <item>College Of Engineering, Guindy (Chennai)</item>
+        <item>College Of Engineering, Pune (Pune)</item>
+        <item>Cummins College of Engineering for Women (Pune)</item>
+        <item>CVR College Of Engineering (Hyderabad)</item>
+        <item>Deenbandhu Chhotu Ram University of Science and Technology</item>
+        <item>Delhi Technological University (New-Delhi)</item>
+        <item>Delhi University</item>
+        <item>Dhirubhai Ambani Institute of Information and Communication Technology (DA-IICT)</item>
+        <item>DIT University</item>
+        <item>Dr. Akhilesh Das Gupta Institute of Technology Management</item>
+        <item>Dwarkadas J. Sanghvi College Of Engineering (Mumbai)</item>
+        <item>Faculty Of Engineering, DIT University (Dehradun)</item>
+        <item>Galgotias College Of Engineering And Technology (Noida)</item>
+        <item>Ganeshi Lal Aggarwal University (GLA)</item>
+        <item>Ganeshi Lal Bajaj Institute Of Technology Management (Noida)</item>
+        <item>Gautam Budh University, Noida</item>
+        <item>GB Pant Engineering College, Delhi</item>
+        <item>Government College Of Engineering (Amravati)</item>
+        <item>Government College Of Engineering (Karad)</item>
+        <item>Govt. Model Engineering College (Cochin)</item>
+        <item>Graphic Era University</item>
+        <item>Guru Nanak Dev Engineering College (Ludhiana)</item>
+        <item>Guru Nanak Dev Institute of Technology, Rohini</item>
+        <item>Guru Nanak Dev University, Amritsar (Punjab)</item>
+        <item>Guru Teg Bahadur Institute of Technology (GTBIT), New Delhi</item>
+        <item>HBTU, Lucknow</item>
+        <item>HMRITM, New Delhi</item>
+        <item>IES College Of Technology (Bhopal)</item>
+        <item>IGNOU - The Peoples University, New Delhi</item>
+        <item>IIIT, Allahabad (Allahabad)</item>
+        <item>IIIT, Bhubaneshwar</item>
+        <item>IIIT, Hyderabad (Hyderabad)</item>
+        <item>IIIT, Kota</item>
+        <item>IIMT, Uttar Pradesh</item>
+        <item>IIT, Bombay (Mumbai)</item>
+        <item>IIT, Delhi (Delhi)</item>
+        <item>IIT, Kanpur (Kanpur)</item>
+        <item>IIT, Kharagpur (Kharagpur)</item>
+        <item>IIT, Patna</item>
+        <item>IIT, Roorkee</item>
+        <item>IMS Engineering College (Ghaziabad)</item>
+        <item>Inderprastha Engineering College, Ghaziabad</item>
+        <item>Indian Institute Of Technology (Indian School Of Mines), Dhanbad (Dhanbad)</item>
+        <item>Indira Gandhi Delhi Technical University for Women(IGDTUW), New Delhi</item>
+        <item>Indraprastha Institute Of Information Technology Delhi (New Delhi)</item>
+        <item>Institute Of Engineering Technology, J.K.Lakshmipat University (Jaipur)</item>
+        <item>Institute Of Technology (Ahmedabad)</item>
+        <item>Jagan Institute of Management Studies, Rohini</item>
+        <item>Jaipur Engineering College And Research Center (Jaipur)</item>
+        <item>Jamia Hamdard University</item>
+        <item>Jamia Milia Islamia</item>
+        <item>Jawaharlal Nehru National College Of Engineering (Shimoga)</item>
+        <item>Jaypee Institute Of Information Technology, Noida</item>
+        <item>J.B. Institute Of Technology (Dehradun)</item>
+        <item>JIS College Of Engineering (Kalyani, West Bengal)</item>
+        <item>JSS Academy Of Technical Education (Bangalore)</item>
+        <item>JSS Academy of Technical Education (Noida)</item>
+        <item>Kasturba Institute Of Technology, Pitampura, New Delhi</item>
+        <item>KIET Group Of Institutions (Ghaziabad)</item>
+        <item>KIIT College of Engineering </item>
+        <item>KLE Dr M.S Sheshgiri College Of Engineering And Technology (Belgaum)</item>
+        <item>KLS Gogte Institute Of Technology (Belagavi)</item>
+        <item>K L University (Guntur)</item>
+        <item>Kongu Engineering College (Erode)</item>
+        <item>K R Mangalam University, Greater Noida</item>
+        <item>K.S.R. College Of Enginnering (Thiruchengode)</item>
+        <item>Kuppam Engineering College (Kuppam)</item>
+        <item>Lakshmi Narain College Of Technology (Bhopal)</item>
+        <item>Lal Bahadur Shastri Institute of Management (LBSIM)</item>
+        <item>LNM Institute of Information Technology, (LNMIIT), Rajasthan</item>
+        <item>Lovely Professional University (Phagwara)</item>
+        <item>Madhav Institute of Technology Science (Gwalior)</item>
+        <item>Maharaja Agrasen College of Engineering</item>
+        <item>Maharaja Agresen Institute Of Technology</item>
+        <item>Maharaja Surajmal Institute of Technology</item>
+        <item>Maharashtra Institute Of Technology (Aurangabad)</item>
+        <item>Malla Reddy College of Engineering Technology (Secunderabd)</item>
+        <item>Manav Rachna College of Engineering</item>
+        <item>Manipal Institue Of Technology (Manipal)</item>
+        <item>Mata Sundri College for Women </item>
+        <item>Mepco Schlenk Engineering College (Sivakasi)</item>
+        <item>MERI, New Delhi</item>
+        <item>MIT College Of Engineering (Pune)</item>
+        <item>M.S. Engineering College (Bangalore)</item>
+        <item>M.S. Ramaiah Institute Of Technology (Bangalore)</item>
+        <item>Muffakham Jah College Of Engineering And Technology (Hyderabad)</item>
+        <item>M V J College Of Engineering (Bangalore)</item>
+        <item>National Institute Of Science Technology (Berhampur)</item>
+        <item>National Institute of Technology, Delhi</item>
+        <item>National Institute of Technology, Goa</item>
+        <item>National Institute of Technology, Kurukshetra</item>
+        <item>National Institute of Technology, Uttarakhand</item>
+        <item>Netaji Subhas Institute Of Technology (New Delhi)</item>
+        <item>NIT, Karnataka (Mangalore)</item>
+        <item>Noida Institute of Engineering and Technology (NIET)</item>
+        <item>Panipat Institute of Engineering Technology</item>
+        <item>PEC, Chandigarh</item>
+        <item>P.E.S. College Of Engineering (Mandya)</item>
+        <item>PES University (Bangalore)</item>
+        <item>Pimpri Chinchwad College Of Engineering (Pune)</item>
+        <item>PSG College of Technology (Coimbatore)</item>
+        <item>Punjab Technical University, Kapurthala, Punjab</item>
+        <item>Rajagiri School Of Engineering Technology (Ernakulam)</item>
+        <item>Rajarambapu Institute Of Technology (Sangli)</item>
+        <item>Raj Kumar Goel Institute of Technology(RKGIT), Ghaziabad</item>
+        <item>R.M.D. Engineering College (Thiruvallur)</item>
+        <item>R.M.K. Engineering College (Kavaripettai)</item>
+        <item>Rungta College Of Engineering And Technology (Bhilai)</item>
+        <item>S.A. Engineering College (Chennai)</item>
+        <item>Sanjivani Rural Education Society\'s College Of Engineering (Ahmednagar)</item>
+        <item>Sathyabama Institute of Science and Technology</item>
+        <item>SCMS School Of Engineering Technology (Ernakulam)</item>
+        <item>SDM College Of Engineering Technology (Dharwad)</item>
+        <item>Shaheed Rajguru College of Applied Sciences for Women, Uttar Pradesh</item>
+        <item>Shiv Nadar University</item>
+        <item>Shri Ramdeobaba College Of Engineering And Management (Nagpur)</item>
+        <item>Shri Shankaracharya Technical Campus Bhilai (Bhilai)</item>
+        <item>Shri Vishnu Engineering College For Women (Bhimavaram)</item>
+        <item>Sikkim Manipal Institute Of Technology (Sikkim)</item>
+        <item>Sir M Visvesvaraya Institute Of Technology (Bangalore)</item>
+        <item>Sri Sairam College of Engineering (Bangalore)</item>
+        <item>Sri Sairam Engineering College (Chennai)</item>
+        <item>Sri Sivasubramaniya Nadar College of Engineering (Kalavakkam)</item>
+        <item>SRM Engineering College (Chennai)</item>
+        <item>SVKM\'s NMIMS-Mukesh Patel School Of Technology Management Engineering (Mumbai)</item>
+        <item>Symbiosis Institute Of Technology (Pune)</item>
+        <item>Thapar Institute of Engineering and Technology</item>
+        <item>Thapar University (Patiala)</item>
+        <item>The National Institute Of Engineering (Mysore)</item>
+        <item>The Northcap University (Gurgaon)</item>
+        <item>Thiagarajar College Of Engineering (Madurai)</item>
+        <item>United College of Engineering and Management, Allahabad</item>
+        <item>University College Of Engineering (Hyderabad)</item>
+        <item>University Institute Of Engineering, Chandigarh University (Chandigarh)</item>
+        <item>University Institute Of Engineering Technology, Panjab University (Chandigarh)</item>
+        <item>University of Hyderabad, Hyderabad</item>
+        <item> University School of Information, Communication and Technology (USICT)</item>
+        <item>UPES, Dehradun</item>
+        <item>Veltech High Tech Dr. Rangarajan Dr. Sakunthala Engineering College (Chennai)</item>
+        <item>Vishwakarma Institute of Technology (Pune)</item>
+        <item>Visvesvaraya National Institute Of Technology (Nagpur)</item>
+        <item>VIT University (Vellore)</item>
+        <item>Vivekananda Institute of Professional Studies</item>
+        <item>YMCA University of Science and Technology, Haryana</item>
+        <item>Zakir Husain College Of Engineering Technology, Aligarh (Aligarh)</item>
+    </string-array>
+</resources>
