@@ -1,4 +1,4 @@
-package com.demo.incampus;
+ package com.demo.incampus;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,15 +8,20 @@ import android.accounts.AccountManagerCallback;
 import android.accounts.AccountManagerFuture;
 import android.accounts.AuthenticatorException;
 import android.accounts.OperationCanceledException;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.Toast;
 
+import com.demo.incampus.Model.Register;
+import com.demo.incampus.Model.SignUp;
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
@@ -37,13 +42,14 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 
-import okhttp3.Call;
-import okhttp3.Callback;
 import okhttp3.FormBody;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
-import okhttp3.Response;
+import okhttp3.ResponseBody;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 import retrofit2.http.FormUrlEncoded;
 
 public class SignUpJava extends AppCompatActivity implements GoogleApiClient.OnConnectionFailedListener {
@@ -54,6 +60,10 @@ public class SignUpJava extends AppCompatActivity implements GoogleApiClient.OnC
 
     int RC_SIGN_IN=0,RC_GET_AUTH_CODE=0;
 
+    EditText email,password,username;
+
+    final SharedPreferences preferences = getSharedPreferences("prefs", Context.MODE_PRIVATE);
+
     String serverClientId="812077473460-pvbqdjirafrelcard0ni1ao02r3dde8r.apps.googleusercontent.com";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,6 +73,10 @@ public class SignUpJava extends AppCompatActivity implements GoogleApiClient.OnC
         }
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up_java);
+
+        email=findViewById(R.id.email);
+        password=findViewById(R.id.pwd);
+        username=findViewById(R.id.username);
 
 
         /*_______________________________________START_GOOGLE____________________________________________*/
@@ -111,8 +125,14 @@ public class SignUpJava extends AppCompatActivity implements GoogleApiClient.OnC
         startActivity(i);
     }
     public void go_to_OTP_activity_function(View view) {
-        Intent i=new Intent(this,PhoneNumberActivity.class/*AutthenticateTempActivity.class*/);
-        startActivity(i);
+
+        if(email.getText().toString().isEmpty()||password.getText().toString().isEmpty()||username.getText().toString().isEmpty())
+        {
+            Toast.makeText(this, "Fields can't be Empty", Toast.LENGTH_SHORT).show();
+        }
+        else {
+            API_POST_register_user(email.getText().toString(),username.getText().toString(),password.getText().toString());
+        }
     }
 
     /*_______________________________________START_GOOGLE____________________________________________*/
@@ -173,6 +193,9 @@ public class SignUpJava extends AppCompatActivity implements GoogleApiClient.OnC
 
         if(requestCode==RC_GET_AUTH_CODE)
         {
+            SharedPreferences preferences = getSharedPreferences("prefs", Context.MODE_PRIVATE);
+            final SharedPreferences.Editor editor = preferences.edit();
+
             GoogleSignInResult result = Auth.GoogleSignInApi.getSignInResultFromIntent(data);
             Log.d("Success: ", "onActivityResult:GET_AUTH_CODE:success:" + result.getStatus().isSuccess());
 
@@ -184,11 +207,55 @@ public class SignUpJava extends AppCompatActivity implements GoogleApiClient.OnC
 
                 // Show signed-in UI.
                 Log.i("Auth: ",authCode);
-
+                //STORING IN SHARED PREFERENCES GOOGLE AUTH CODE
+                editor.putString("Auth", authCode );
+                editor.commit();
                 // TODO(user): send code to server and exchange for access/refresh/ID tokens.
                 // [END get_auth_code]
             }
         }
     }
     /*__________________________________________END_GOOGLE______________________________________________*/
+
+    public void API_POST_register_user(String personEmail,String personGivenName,String personPassword)
+    {
+        SharedPreferences preferences = getSharedPreferences("prefs", Context.MODE_PRIVATE);
+        final SharedPreferences.Editor editor = preferences.edit();
+
+        //API POST REGISTER
+        retrofit2.Call<Register> register=RetrofitClient.getInstance().getApi().register(personEmail,personGivenName,personPassword);
+        register.enqueue(new Callback<Register>() {
+            @Override
+            public void onResponse(retrofit2.Call<Register> call, Response<Register> response) {
+                try {
+
+                    /*Register s=response.body();
+                    editor.putString("JWT", s.getAccessToken());
+                    editor.commit();
+                     */
+                    Intent i=new Intent(SignUpJava.this,PhoneNumberActivity.class);
+                    startActivity(i);
+
+
+                    Log.i("response","Got response from user");
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    Toast.makeText(SignUpJava.this,"User already registered!", Toast.LENGTH_SHORT).show();
+                    Log.i("No response","exception");
+                }
+            }
+
+            @Override
+            public void onFailure(Call<Register> call, Throwable t) {
+                Toast.makeText(SignUpJava.this, t.getMessage(), Toast.LENGTH_SHORT).show();
+                Log.i("Info","No response for register user post");
+            }
+
+        });
+    }
+
+    public void API_POST_google_auth_response()
+    {
+
+    }
 }
