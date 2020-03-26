@@ -47,7 +47,8 @@ public interface Api {
             @Field("otp") String OTP,
             @Field("session_id") String sessionID);
     
-      @FormUrlEncoded
+    @FormUrlEncoded
+    @POST("social/android/google")
     Call<ResponseBody> google_id_token(
             @Field("id_token") String id_token_google
     );
