@@ -46,4 +46,9 @@ public interface Api {
     Call<ResponseBody> verifyotp(
             @Field("otp") String OTP,
             @Field("session_id") String sessionID);
+    
+      @FormUrlEncoded
+    Call<ResponseBody> google_id_token(
+            @Field("id_token") String id_token_google
+    );
 }
