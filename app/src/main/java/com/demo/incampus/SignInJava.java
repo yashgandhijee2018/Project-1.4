@@ -1,4 +1,4 @@
- package com.demo.incampus;
+package com.demo.incampus;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -342,6 +342,9 @@ public class SignInJava extends AppCompatActivity implements GoogleApiClient.OnC
 
         if(requestCode==RC_GET_AUTH_CODE)
         {
+            SharedPreferences preferences = getSharedPreferences("prefs", Context.MODE_PRIVATE);
+            final SharedPreferences.Editor editor = preferences.edit();
+
             GoogleSignInResult result = Auth.GoogleSignInApi.getSignInResultFromIntent(data);
             Log.d("Success: ", "onActivityResult:GET_AUTH_CODE:success:" + result.getStatus().isSuccess());
 
@@ -354,6 +357,9 @@ public class SignInJava extends AppCompatActivity implements GoogleApiClient.OnC
                 // Show signed-in UI.
                 Log.i("Auth: ",authCode);
 
+                //STORING IN SHARED PREFERENCES GOOGLE AUTH CODE
+                editor.putString("Auth", authCode );
+                editor.commit();
                 // TODO(user): send code to server and exchange for access/refresh/ID tokens.
                 // [END get_auth_code]
             }
